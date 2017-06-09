@@ -20,6 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func detailbuttonClicked(_ sender: Any)
+    {
+        //let greenScene = DetailViewController.instantiate(fromAppStoryboard: .Detail)
+        
+        let greenScene = AppStoryboard.Detail.viewController(viewControllerClass: DetailViewController.self)
+        
+        //let greenScene = AppStoryboard.Detail.instance.instantiateViewController(withIdentifier: DetailViewController.storyboardID)
+        self.present(greenScene, animated: true, completion: nil)
+
+    }
 
 }
 

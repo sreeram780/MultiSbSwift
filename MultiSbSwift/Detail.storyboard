@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BHC-A2-xU4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="WtI-Ga-eSV">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BHC-A2-xU4" customClass="DetailViewController" customModule="MultiSbSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xwq-f0-tY3"/>
+                        <viewControllerLayoutGuide type="bottom" id="588-0m-86S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iXo-uX-EBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5f-oF-R5E">
+                                <rect key="frame" x="140" y="318" width="94" height="30"/>
+                                <state key="normal" title="Go to Second"/>
+                                <connections>
+                                    <action selector="gotoSecondView:" destination="BHC-A2-xU4" eventType="touchUpInside" id="Q3D-nx-O4v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v5f-oF-R5E" firstAttribute="centerX" secondItem="iXo-uX-EBN" secondAttribute="centerX" id="Au0-7q-Pjr"/>
+                            <constraint firstItem="v5f-oF-R5E" firstAttribute="centerY" secondItem="iXo-uX-EBN" secondAttribute="centerY" id="lic-rE-XQk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOO-BS-Tvu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2466" y="367"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zWz-0T-aNr">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="k6b-ee-8uI" customClass="SecondViewController" customModule="MultiSbSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Iw-AM-SKQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="DJa-oF-75H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0hp-EG-fZU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fye-xu-5ku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100" y="367"/>
+        </scene>
+    </scenes>
+</document>
